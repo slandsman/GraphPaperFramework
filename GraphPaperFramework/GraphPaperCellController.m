@@ -80,22 +80,20 @@ NSMutableSet *sinks;
 
 -(void)addCell:(GraphPaperCell *)cell withX:(int)x andY:(int)y
 {
-    [cells setObject:cell forKeyOne:[NSNumber numberWithInt:x] andKeyTwo:
-     [NSNumber numberWithInt:y]];
+    [cells setObject:cell forIndexOne:x andIndexTwo:y];
     [self notifySinks];    
 }
 
 -(void)deleteCellWithX:(int)x andY:(int)y
 {
-    [cells removeObjectForKeyOne:[NSNumber numberWithInt:x] andKeyTwo:
-     [NSNumber numberWithInt:y]];
+    [cells removeObjectForIndexOne:x andIndexTwo:y];
     [self notifySinks];    
 }
 
 -(BOOL)hasCellWithX:(int)x andY:(int)y
 {
-    GraphPaperCell *cell = [cells objectForKeyOne:[NSNumber numberWithInt:x] 
-                                        andKeyTwo:[NSNumber numberWithInt:y]];
+    GraphPaperCell *cell = [cells objectForIndexOne:x
+                                        andIndexTwo:y];
     if (cell != nil) {
         return YES;
     } else {
