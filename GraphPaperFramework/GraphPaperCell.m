@@ -13,6 +13,26 @@
 @synthesize x;
 @synthesize y;
 
+-(id)initWithPoint:(NSPoint) point
+{
+    self = [super init];
+    if (self) {
+        x = point.x;
+        y = point.y;
+    }
+    return self;
+}
+
+-(id)initWithX:(int)xV andY:(int)yV
+{
+    self = [super init];
+    if (self) {
+        x = xV;
+        y = yV;
+    }
+    return self;
+}
+
 @end
 
 

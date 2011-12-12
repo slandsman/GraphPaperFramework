@@ -17,4 +17,7 @@
 @property (readwrite,assign) int x;
 @property (readwrite,assign) int y;
 
+-(id)initWithPoint:(NSPoint) point;
+-(id)initWithX:(int)x andY:(int)y;
+
 @end
