@@ -50,12 +50,8 @@ NSMutableSet *sinks;
 
 -(void)notifySinks
 {
-    NSEnumerator *en = [sinks objectEnumerator];
-    id<CellSink> sink;
-    while (sink = [en nextObject])
-    {
-        [sink handleUpdate:self];
-    }
+    NSNotification *not = [NSNotification notificationWithName:@"UPDATE CELLS" object:self];
+    [[NSNotificationCenter defaultCenter] postNotification:not];
 }
 
 -(NSSet *)cells {
@@ -98,8 +94,23 @@ NSMutableSet *sinks;
     }
 }
 
+-(void)handleClick:(NSNotification *)not
+{
+    NSValue *v = [[not userInfo] objectForKey:@"point"];
+    NSPoint loc = [v pointValue];
+    NSLog(@"Got a click at %f, %f", loc.x, loc.y);
+    GraphPaperCell *cell = [[GraphPaperCell alloc] initWithPoint:loc];
+    if ([self hasCellWithX:loc.x andY:loc.y]) {
+        [self deleteCellWithX:loc.x andY:loc.y];
+    } else {
+        [self addCell:cell withX:cell.x andY:cell.y];
+    }
+    [self.view setNeedsDisplay:TRUE];
+}
+
 -(void)handleClick:(NSPoint)loc fromSource:(id)source
 {
+    
     NSLog(@"Got a click from %@ at %f, %f", source, loc.x, loc.y);
     GraphPaperCell *cell = [[GraphPaperCell alloc] initWithPoint:loc];
     if ([self hasCellWithX:loc.x andY:loc.y]) {

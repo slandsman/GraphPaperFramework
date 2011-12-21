@@ -29,15 +29,17 @@ GraphPaperCellController *controller;
     controller = [[GraphPaperCellController alloc] initWithView:view];
     view.source = controller;
     
-    [controller addCellSink:self];
-    [controller addCellSink:view];
+    NSNotificationCenter *notctr = [NSNotificationCenter defaultCenter];
+    [notctr addObserver:self selector:@selector(handleUpdate:) name:@"UPDATE CELLS" object:nil];
+    [notctr addObserver:view selector:@selector(handleUpdate:) name:@"UPDATE CELLS" object:nil];
+    [notctr addObserver:controller selector:@selector(handleClick:) name:@"UPDATE CLICK" object:nil];
     
-    [view addClickSink:controller];
     [self doUpdateStatus];
 }
 
 -(void)handleUpdate:(id)source
 {
+    NSLog(@"Got the notification ...");
     [self doUpdateStatus];
 }
 
