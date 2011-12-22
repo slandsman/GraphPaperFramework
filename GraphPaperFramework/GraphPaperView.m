@@ -15,13 +15,12 @@
 
 static int GRID_SCALE = 10;
 NSPoint last_touch;
-NSMutableSet *click_sinks;
 
 - (id)initWithFrame:(NSRect)frame
 {
     self = [super initWithFrame:frame];
     if (self) {
-        click_sinks = [[NSMutableSet alloc] init];
+
     }
     
     return self;
@@ -114,16 +113,6 @@ NSMutableSet *click_sinks;
     } else {
         // do nothing
     }
-}
-
--(void)addClickSink:(id<ClickSink>)listener
-{
-    [click_sinks addObject:listener];
-}
-
--(void)removeClickSink:(id<ClickSink>)listener
-{
-    [click_sinks removeObject:listener];
 }
 
 -(void)handleUpdate:(id)source

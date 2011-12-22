@@ -17,7 +17,7 @@
 #import "GraphPaperView.h"
 #import "GraphPaperCell.h"
 
-@interface GraphPaperCellController : NSObject <CellSource, ClickSink>
+@interface GraphPaperCellController : NSObject <CellSource>
 
 @property (assign) GraphPaperView *view;
 

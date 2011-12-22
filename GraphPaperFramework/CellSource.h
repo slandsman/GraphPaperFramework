@@ -15,7 +15,5 @@
 @protocol CellSource <NSObject>
 
 -(NSSet *)cells;
--(void)addCellSink:(id<CellSink>)sink;
--(void)removeCellSink:(id<CellSink>)sink;
 
 @end
