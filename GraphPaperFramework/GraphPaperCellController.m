@@ -108,28 +108,4 @@ NSMutableSet *sinks;
     [self.view setNeedsDisplay:TRUE];
 }
 
--(void)handleClick:(NSPoint)loc fromSource:(id)source
-{
-    
-    NSLog(@"Got a click from %@ at %f, %f", source, loc.x, loc.y);
-    GraphPaperCell *cell = [[GraphPaperCell alloc] initWithPoint:loc];
-    if ([self hasCellWithX:loc.x andY:loc.y]) {
-        [self deleteCellWithX:loc.x andY:loc.y];
-    } else {
-        [self addCell:cell withX:cell.x andY:cell.y];
-    }
-    [self.view setNeedsDisplay:TRUE];
-}
-
--(void)addCellSink:(id<CellSink>)sink 
-{
-    [sinks addObject:sink];
-}
-
--(void)removeCellSink:(id<CellSink>)sink
-{
-    [sinks removeObject:sink];
-}
-
-
 @end

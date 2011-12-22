@@ -10,7 +10,7 @@
 
 #import "CellSource.h"
 
-@interface GraphPaperView : NSView <CellSink>
+@interface GraphPaperView : NSView
 
 @property(assign) id<CellSource> source;
 

@@ -22,7 +22,6 @@
 		5D07D3B2143A7123004BC2A1 /* CellSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D07D3A8143A7123004BC2A1 /* CellSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5D07D3B3143A7123004BC2A1 /* GraphPaperCellController.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D07D3A9143A7123004BC2A1 /* GraphPaperCellController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5D07D3B4143A7123004BC2A1 /* GraphPaperCellController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D07D3AA143A7123004BC2A1 /* GraphPaperCellController.m */; };
-		5D07D3B7143A7123004BC2A1 /* CellSink.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D07D3AD143A7123004BC2A1 /* CellSink.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5D07D3BC143A7141004BC2A1 /* TwoKeyDictionaryFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D07D3BB143A7141004BC2A1 /* TwoKeyDictionaryFramework.framework */; };
 		5D171D2714409CC30020BFF8 /* TwoKeyDictionaryFramework.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 5D07D3BB143A7141004BC2A1 /* TwoKeyDictionaryFramework.framework */; };
 		5D36F970149424040060D9CB /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D07D373143A7107004BC2A1 /* Cocoa.framework */; };
@@ -102,7 +101,6 @@
 		5D07D3A8143A7123004BC2A1 /* CellSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellSource.h; sourceTree = "<group>"; };
 		5D07D3A9143A7123004BC2A1 /* GraphPaperCellController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GraphPaperCellController.h; sourceTree = "<group>"; };
 		5D07D3AA143A7123004BC2A1 /* GraphPaperCellController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GraphPaperCellController.m; sourceTree = "<group>"; };
-		5D07D3AD143A7123004BC2A1 /* CellSink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellSink.h; sourceTree = "<group>"; };
 		5D07D3BB143A7141004BC2A1 /* TwoKeyDictionaryFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwoKeyDictionaryFramework.framework; sourceTree = "<group>"; };
 		5D36F96E149424040060D9CB /* GraphPaperFrameworkStake.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GraphPaperFrameworkStake.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D36F973149424040060D9CB /* GraphPaperFrameworkStake-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GraphPaperFrameworkStake-Info.plist"; sourceTree = "<group>"; };
@@ -199,7 +197,6 @@
 				5D07D3A8143A7123004BC2A1 /* CellSource.h */,
 				5D07D3A9143A7123004BC2A1 /* GraphPaperCellController.h */,
 				5D07D3AA143A7123004BC2A1 /* GraphPaperCellController.m */,
-				5D07D3AD143A7123004BC2A1 /* CellSink.h */,
 				5D07D380143A7107004BC2A1 /* GraphPaperFramework.h */,
 				5D07D381143A7107004BC2A1 /* GraphPaperFramework.m */,
 				5D07D37A143A7107004BC2A1 /* Supporting Files */,
@@ -270,7 +267,6 @@
 				5D07D3B0143A7123004BC2A1 /* GraphPaperView.h in Headers */,
 				5D07D3B2143A7123004BC2A1 /* CellSource.h in Headers */,
 				5D07D3B3143A7123004BC2A1 /* GraphPaperCellController.h in Headers */,
-				5D07D3B7143A7123004BC2A1 /* CellSink.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

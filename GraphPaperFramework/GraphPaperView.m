@@ -77,13 +77,6 @@ NSPoint last_touch;
     [data setObject:v forKey:@"point"];
     NSNotification *not = [NSNotification notificationWithName:@"UPDATE CLICK" object:self userInfo:data];
     [[NSNotificationCenter defaultCenter] postNotification:not];
-/*
-    NSEnumerator *e = [click_sinks objectEnumerator];
-    id<ClickSink> sink;
-    
-    while ((sink = [e nextObject])) {
-        [sink handleClick:loc fromSource:self];
-    }*/
 }
 
 - (void)mouseDown:(NSEvent *)theEvent

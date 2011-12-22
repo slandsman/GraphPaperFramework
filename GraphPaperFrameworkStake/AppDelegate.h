@@ -8,9 +8,8 @@
 
 #import <Cocoa/Cocoa.h>
 #import <GraphPaperFramework/GraphPaperView.h>
-#import <GraphPaperFramework/CellSink.h>
 
-@interface AppDelegate : NSObject <NSApplicationDelegate, CellSink>
+@interface AppDelegate : NSObject <NSApplicationDelegate>
 
 @property (strong) IBOutlet NSWindow *window;
 @property (strong) IBOutlet GraphPaperView *view;
