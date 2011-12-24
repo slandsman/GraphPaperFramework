@@ -19,9 +19,6 @@
 
 @interface GraphPaperCellController : NSObject <CellSource>
 
-@property (assign) GraphPaperView *view;
-
--(GraphPaperCellController *)initWithView:(GraphPaperView *)view;
 -(void)addCell:(GraphPaperCell *)cell;
 -(void)deleteCell:(GraphPaperCell *)cell;
 -(void)addCell:(GraphPaperCell *)cell withX:(int)x andY:(int)y;

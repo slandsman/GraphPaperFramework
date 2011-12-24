@@ -14,8 +14,6 @@
 
 @implementation GraphPaperCellController
 
-@synthesize view;
-
 TwoKeyMutableDictionary *cells;
 NSMutableSet *sinks;
 
@@ -34,10 +32,10 @@ NSMutableSet *sinks;
     c = [[GraphPaperCell alloc] initWithX:5 andY:10];
     [self addCell:c];
 
-    [view setNeedsDisplay:TRUE];
+//    [view setNeedsDisplay:TRUE];
 }
 
--(GraphPaperCellController *)initWithView:(GraphPaperView *)v
+-(GraphPaperCellController *)init
 {
     self = [super init];
     if (self) 
@@ -45,12 +43,11 @@ NSMutableSet *sinks;
         NSNotificationCenter *notctr = [NSNotificationCenter defaultCenter];
         [notctr addObserver:self selector:@selector(handleClick:) 
                        name:[ClickSourceConstants kGPVClickDidOccur] object:nil];
-        self.view = v;
         sinks = [[NSMutableSet alloc] init];
         cells = [[TwoKeyMutableDictionary alloc] init];
         [self populate_sample_data];
     }
-    return self;
+    return self;    
 }
 
 -(void)notifySinks
@@ -112,7 +109,7 @@ NSMutableSet *sinks;
     } else {
         [self addCell:cell withX:cell.x andY:cell.y];
     }
-    [self.view setNeedsDisplay:TRUE];
+//    [self.view setNeedsDisplay:TRUE];
 }
 
 @end

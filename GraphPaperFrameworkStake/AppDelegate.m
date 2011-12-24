@@ -26,7 +26,7 @@ GraphPaperCellController *controller;
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {        
-    controller = [[GraphPaperCellController alloc] initWithView:view];
+    controller = [[GraphPaperCellController alloc] init];
     view.source = controller;
     
     NSNotificationCenter *notctr = [NSNotificationCenter defaultCenter];

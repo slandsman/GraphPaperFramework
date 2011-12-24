@@ -117,6 +117,7 @@ static int GRID_SCALE = 10;
 -(void)handleUpdate:(id)source
 {
     NSLog(@"handling update in view");
+    [self setNeedsDisplay:TRUE];
 }
 
 @end
