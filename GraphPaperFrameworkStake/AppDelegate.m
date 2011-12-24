@@ -25,14 +25,12 @@
 GraphPaperCellController *controller;
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
-{
+{        
     controller = [[GraphPaperCellController alloc] initWithView:view];
     view.source = controller;
     
     NSNotificationCenter *notctr = [NSNotificationCenter defaultCenter];
-    [notctr addObserver:self selector:@selector(handleUpdate:) name:@"UPDATE CELLS" object:nil];
-    [notctr addObserver:view selector:@selector(handleUpdate:) name:@"UPDATE CELLS" object:nil];
-    [notctr addObserver:controller selector:@selector(handleClick:) name:@"UPDATE CLICK" object:nil];
+    [notctr addObserver:self selector:@selector(handleUpdate:) name:kGPVCellsDidUpdate object:nil];
     
     [self doUpdateStatus];
 }

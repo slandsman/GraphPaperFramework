@@ -33,6 +33,9 @@
 		5D36F99E1494302C0060D9CB /* GraphPaperFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D07D370143A7107004BC2A1 /* GraphPaperFramework.framework */; };
 		5D36F9A01494304B0060D9CB /* GraphPaperFramework.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5D07D370143A7107004BC2A1 /* GraphPaperFramework.framework */; };
 		5D36F9A1149430770060D9CB /* TwoKeyDictionaryFramework.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5D07D3BB143A7141004BC2A1 /* TwoKeyDictionaryFramework.framework */; };
+		5D9EB65614A5454B007ED66A /* ClickSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D9EB65414A5454B007ED66A /* ClickSource.h */; };
+		5D9EB65714A5454B007ED66A /* ClickSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D9EB65514A5454B007ED66A /* ClickSource.m */; };
+		5D9EB65A14A54562007ED66A /* CellSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D9EB65914A54562007ED66A /* CellSource.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -111,6 +114,9 @@
 		5D36F97D149424040060D9CB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5D36F97E149424040060D9CB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		5D36F981149424040060D9CB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		5D9EB65414A5454B007ED66A /* ClickSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClickSource.h; sourceTree = "<group>"; };
+		5D9EB65514A5454B007ED66A /* ClickSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClickSource.m; sourceTree = "<group>"; };
+		5D9EB65914A54562007ED66A /* CellSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CellSource.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -195,6 +201,9 @@
 				5D07D3A6143A7123004BC2A1 /* GraphPaperView.h */,
 				5D07D3A7143A7123004BC2A1 /* GraphPaperView.m */,
 				5D07D3A8143A7123004BC2A1 /* CellSource.h */,
+				5D9EB65914A54562007ED66A /* CellSource.m */,
+				5D9EB65414A5454B007ED66A /* ClickSource.h */,
+				5D9EB65514A5454B007ED66A /* ClickSource.m */,
 				5D07D3A9143A7123004BC2A1 /* GraphPaperCellController.h */,
 				5D07D3AA143A7123004BC2A1 /* GraphPaperCellController.m */,
 				5D07D380143A7107004BC2A1 /* GraphPaperFramework.h */,
@@ -267,6 +276,7 @@
 				5D07D3B0143A7123004BC2A1 /* GraphPaperView.h in Headers */,
 				5D07D3B2143A7123004BC2A1 /* CellSource.h in Headers */,
 				5D07D3B3143A7123004BC2A1 /* GraphPaperCellController.h in Headers */,
+				5D9EB65614A5454B007ED66A /* ClickSource.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,6 +422,8 @@
 				5D07D3AF143A7123004BC2A1 /* GraphPaperCell.m in Sources */,
 				5D07D3B1143A7123004BC2A1 /* GraphPaperView.m in Sources */,
 				5D07D3B4143A7123004BC2A1 /* GraphPaperCellController.m in Sources */,
+				5D9EB65714A5454B007ED66A /* ClickSource.m in Sources */,
+				5D9EB65A14A54562007ED66A /* CellSource.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

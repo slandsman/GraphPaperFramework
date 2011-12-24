@@ -20,7 +20,8 @@ NSPoint last_touch;
 {
     self = [super initWithFrame:frame];
     if (self) {
-
+        NSNotificationCenter *notctr = [NSNotificationCenter defaultCenter];
+        [notctr addObserver:self selector:@selector(handleUpdate:) name:kGPVCellsDidUpdate object:nil];
     }
     
     return self;
@@ -75,7 +76,7 @@ NSPoint last_touch;
     NSMutableDictionary *data = [[NSMutableDictionary alloc] init];
     NSValue *v = [NSValue valueWithPoint:loc];
     [data setObject:v forKey:@"point"];
-    NSNotification *not = [NSNotification notificationWithName:@"UPDATE CLICK" object:self userInfo:data];
+    NSNotification *not = [NSNotification notificationWithName:kGPVClickDidOccur object:self userInfo:data];
     [[NSNotificationCenter defaultCenter] postNotification:not];
 }
 

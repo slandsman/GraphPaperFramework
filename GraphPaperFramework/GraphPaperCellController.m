@@ -40,6 +40,8 @@ NSMutableSet *sinks;
     self = [super init];
     if (self) 
     {
+        NSNotificationCenter *notctr = [NSNotificationCenter defaultCenter];
+        [notctr addObserver:self selector:@selector(handleClick:) name:kGPVClickDidOccur object:nil];
         self.view = v;
         sinks = [[NSMutableSet alloc] init];
         cells = [[TwoKeyMutableDictionary alloc] init];
@@ -50,7 +52,7 @@ NSMutableSet *sinks;
 
 -(void)notifySinks
 {
-    NSNotification *not = [NSNotification notificationWithName:@"UPDATE CELLS" object:self];
+    NSNotification *not = [NSNotification notificationWithName:kGPVCellsDidUpdate object:self];
     [[NSNotificationCenter defaultCenter] postNotification:not];
 }
 
@@ -96,6 +98,7 @@ NSMutableSet *sinks;
 
 -(void)handleClick:(NSNotification *)not
 {
+    NSLog(@"Controller handling click ...");
     NSValue *v = [[not userInfo] objectForKey:@"point"];
     NSPoint loc = [v pointValue];
     NSLog(@"Got a click at %f, %f", loc.x, loc.y);

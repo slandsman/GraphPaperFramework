@@ -11,7 +11,9 @@
 
 #import <Foundation/Foundation.h>
 
-@protocol CellSource <NSObject>
+@interface CellSource : NSObject
+
+extern NSString * const kGPVCellsDidUpdate;
 
 -(NSSet *)cells;
 

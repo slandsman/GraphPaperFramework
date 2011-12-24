@@ -9,10 +9,11 @@
 #import <Cocoa/Cocoa.h>
 
 #import "CellSource.h"
+#import "ClickSource.h"
 
-@interface GraphPaperView : NSView
+@interface GraphPaperView : ClickSource
 
-@property(assign) id<CellSource> source;
+@property(assign) CellSource *source;
 
 @end
 
