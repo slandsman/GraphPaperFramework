@@ -11,9 +11,9 @@
 #import "CellSource.h"
 #import "ClickSource.h"
 
-@interface GraphPaperView : ClickSource
+@interface GraphPaperView : NSView <ClickSource>
 
-@property(assign) CellSource *source;
+@property(assign) id<CellSource> source;
 
 @end
 

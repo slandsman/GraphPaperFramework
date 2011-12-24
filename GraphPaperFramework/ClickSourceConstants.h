@@ -1,13 +1,15 @@
 //
-//  ClickSource.h
+//  ClickSourceConstants.h
 //  GraphPaperFramework
 //
-//  Created by Seth Landsman on 12/23/11.
+//  Created by Seth Landsman on 12/24/11.
 //  Copyright (c) 2011 HomeForDerangedScientists. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 
-@protocol ClickSource
+@interface ClickSourceConstants : NSObject
+
++(NSString *)kGPVClickDidOccur;
 
 @end

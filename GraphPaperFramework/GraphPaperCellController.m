@@ -8,6 +8,8 @@
 
 #import "GraphPaperCellController.h"
 #import "GraphPaperCell.h"
+#import "CellSourceConstants.h"
+#import "ClickSourceConstants.h"
 #import <TwoKeyDictionaryFramework/TwoKeyMutableDictionary.h>
 
 @implementation GraphPaperCellController
@@ -41,7 +43,8 @@ NSMutableSet *sinks;
     if (self) 
     {
         NSNotificationCenter *notctr = [NSNotificationCenter defaultCenter];
-        [notctr addObserver:self selector:@selector(handleClick:) name:kGPVClickDidOccur object:nil];
+        [notctr addObserver:self selector:@selector(handleClick:) 
+                       name:[ClickSourceConstants kGPVClickDidOccur] object:nil];
         self.view = v;
         sinks = [[NSMutableSet alloc] init];
         cells = [[TwoKeyMutableDictionary alloc] init];
@@ -52,7 +55,8 @@ NSMutableSet *sinks;
 
 -(void)notifySinks
 {
-    NSNotification *not = [NSNotification notificationWithName:kGPVCellsDidUpdate object:self];
+    NSNotification *not = [NSNotification 
+                           notificationWithName:[CellSourceConstants kGPVCellsDidUpdate] object:self];
     [[NSNotificationCenter defaultCenter] postNotification:not];
 }
 

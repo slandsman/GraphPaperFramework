@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import <GraphPaperFramework/CellSource.h>
+#import "CellSourceConstants.h"
 #import <GraphPaperFramework/GraphPaperCellController.h>
 
 @interface AppDelegate (private)
@@ -30,8 +30,8 @@ GraphPaperCellController *controller;
     view.source = controller;
     
     NSNotificationCenter *notctr = [NSNotificationCenter defaultCenter];
-    [notctr addObserver:self selector:@selector(handleUpdate:) name:kGPVCellsDidUpdate object:nil];
-    
+    [notctr addObserver:self selector:@selector(handleUpdate:) 
+                   name:[CellSourceConstants kGPVCellsDidUpdate] object:nil];
     [self doUpdateStatus];
 }
 
