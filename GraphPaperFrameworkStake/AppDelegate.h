@@ -7,7 +7,7 @@
 //
 
 #import <Cocoa/Cocoa.h>
-#import <GraphPaperFramework/GraphPaperView.h>
+#import "GraphPaperFramework.h"
 
 @interface AppDelegate : NSObject <NSApplicationDelegate>
 

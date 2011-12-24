@@ -7,8 +7,6 @@
 //
 
 #import "AppDelegate.h"
-#import "CellSourceConstants.h"
-#import <GraphPaperFramework/GraphPaperCellController.h>
 
 @interface AppDelegate (private)
 

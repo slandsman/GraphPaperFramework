@@ -7,5 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "GraphPaperCell.h"
+#import "GraphPaperView.h"
+#import "CellSource.h"
+#import "CellSourceConstants.h"
+#import "GraphPaperCellController.h"
 
 

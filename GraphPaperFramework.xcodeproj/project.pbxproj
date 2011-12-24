@@ -9,12 +9,8 @@
 /* Begin PBXBuildFile section */
 		5D07D374143A7107004BC2A1 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D07D373143A7107004BC2A1 /* Cocoa.framework */; };
 		5D07D37E143A7107004BC2A1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5D07D37C143A7107004BC2A1 /* InfoPlist.strings */; };
-		5D07D3AE143A7123004BC2A1 /* GraphPaperCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D07D3A4143A7123004BC2A1 /* GraphPaperCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5D07D3AF143A7123004BC2A1 /* GraphPaperCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D07D3A5143A7123004BC2A1 /* GraphPaperCell.m */; };
-		5D07D3B0143A7123004BC2A1 /* GraphPaperView.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D07D3A6143A7123004BC2A1 /* GraphPaperView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5D07D3B1143A7123004BC2A1 /* GraphPaperView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D07D3A7143A7123004BC2A1 /* GraphPaperView.m */; };
-		5D07D3B2143A7123004BC2A1 /* CellSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D07D3A8143A7123004BC2A1 /* CellSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5D07D3B3143A7123004BC2A1 /* GraphPaperCellController.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D07D3A9143A7123004BC2A1 /* GraphPaperCellController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5D07D3B4143A7123004BC2A1 /* GraphPaperCellController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D07D3AA143A7123004BC2A1 /* GraphPaperCellController.m */; };
 		5D07D3BC143A7141004BC2A1 /* TwoKeyDictionaryFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D07D3BB143A7141004BC2A1 /* TwoKeyDictionaryFramework.framework */; };
 		5D171D2714409CC30020BFF8 /* TwoKeyDictionaryFramework.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 5D07D3BB143A7141004BC2A1 /* TwoKeyDictionaryFramework.framework */; };
@@ -27,15 +23,20 @@
 		5D36F99E1494302C0060D9CB /* GraphPaperFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D07D370143A7107004BC2A1 /* GraphPaperFramework.framework */; };
 		5D36F9A01494304B0060D9CB /* GraphPaperFramework.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5D07D370143A7107004BC2A1 /* GraphPaperFramework.framework */; };
 		5D36F9A1149430770060D9CB /* TwoKeyDictionaryFramework.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5D07D3BB143A7141004BC2A1 /* TwoKeyDictionaryFramework.framework */; };
-		5D9EB65614A5454B007ED66A /* ClickSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D9EB65414A5454B007ED66A /* ClickSource.h */; };
-		5D9EB66114A6022A007ED66A /* CellSourceConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D9EB65F14A6022A007ED66A /* CellSourceConstants.h */; };
 		5D9EB66214A6022A007ED66A /* CellSourceConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D9EB66014A6022A007ED66A /* CellSourceConstants.m */; };
-		5D9EB66514A60796007ED66A /* ClickSourceConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D9EB66314A60796007ED66A /* ClickSourceConstants.h */; };
 		5D9EB66614A60796007ED66A /* ClickSourceConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D9EB66414A60796007ED66A /* ClickSourceConstants.m */; };
 		5D9EB67214A63E6C007ED66A /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D07D389143A7107004BC2A1 /* SenTestingKit.framework */; };
 		5D9EB67314A63E6C007ED66A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D07D373143A7107004BC2A1 /* Cocoa.framework */; };
 		5D9EB67914A63E6C007ED66A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5D9EB67714A63E6C007ED66A /* InfoPlist.strings */; };
 		5D9EB67C14A63E6C007ED66A /* GraphPaperFrameworkUnitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D9EB67B14A63E6C007ED66A /* GraphPaperFrameworkUnitTests.m */; };
+		5D9EB68114A640EB007ED66A /* GraphPaperFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D07D380143A7107004BC2A1 /* GraphPaperFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5D9EB68714A64122007ED66A /* GraphPaperCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D07D3A4143A7123004BC2A1 /* GraphPaperCell.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		5D9EB68814A64125007ED66A /* GraphPaperView.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D07D3A6143A7123004BC2A1 /* GraphPaperView.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		5D9EB68914A64127007ED66A /* CellSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D07D3A8143A7123004BC2A1 /* CellSource.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		5D9EB68A14A64129007ED66A /* ClickSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D9EB65414A5454B007ED66A /* ClickSource.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		5D9EB68B14A6412B007ED66A /* ClickSourceConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D9EB66314A60796007ED66A /* ClickSourceConstants.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		5D9EB68C14A6412E007ED66A /* CellSourceConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D9EB65F14A6022A007ED66A /* CellSourceConstants.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		5D9EB68D14A64130007ED66A /* GraphPaperCellController.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D07D3A9143A7123004BC2A1 /* GraphPaperCellController.h */; settings = {ATTRIBUTES = (Private, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -268,13 +269,14 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5D07D3AE143A7123004BC2A1 /* GraphPaperCell.h in Headers */,
-				5D07D3B0143A7123004BC2A1 /* GraphPaperView.h in Headers */,
-				5D07D3B2143A7123004BC2A1 /* CellSource.h in Headers */,
-				5D07D3B3143A7123004BC2A1 /* GraphPaperCellController.h in Headers */,
-				5D9EB65614A5454B007ED66A /* ClickSource.h in Headers */,
-				5D9EB66114A6022A007ED66A /* CellSourceConstants.h in Headers */,
-				5D9EB66514A60796007ED66A /* ClickSourceConstants.h in Headers */,
+				5D9EB68114A640EB007ED66A /* GraphPaperFramework.h in Headers */,
+				5D9EB68714A64122007ED66A /* GraphPaperCell.h in Headers */,
+				5D9EB68814A64125007ED66A /* GraphPaperView.h in Headers */,
+				5D9EB68B14A6412B007ED66A /* ClickSourceConstants.h in Headers */,
+				5D9EB68D14A64130007ED66A /* GraphPaperCellController.h in Headers */,
+				5D9EB68C14A6412E007ED66A /* CellSourceConstants.h in Headers */,
+				5D9EB68A14A64129007ED66A /* ClickSource.h in Headers */,
+				5D9EB68914A64127007ED66A /* CellSource.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
