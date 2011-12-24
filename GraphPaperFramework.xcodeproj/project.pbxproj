@@ -25,10 +25,6 @@
 		5D36F9A1149430770060D9CB /* TwoKeyDictionaryFramework.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5D07D3BB143A7141004BC2A1 /* TwoKeyDictionaryFramework.framework */; };
 		5D9EB66214A6022A007ED66A /* CellSourceConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D9EB66014A6022A007ED66A /* CellSourceConstants.m */; };
 		5D9EB66614A60796007ED66A /* ClickSourceConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D9EB66414A60796007ED66A /* ClickSourceConstants.m */; };
-		5D9EB67214A63E6C007ED66A /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D07D389143A7107004BC2A1 /* SenTestingKit.framework */; };
-		5D9EB67314A63E6C007ED66A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D07D373143A7107004BC2A1 /* Cocoa.framework */; };
-		5D9EB67914A63E6C007ED66A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5D9EB67714A63E6C007ED66A /* InfoPlist.strings */; };
-		5D9EB67C14A63E6C007ED66A /* GraphPaperFrameworkUnitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D9EB67B14A63E6C007ED66A /* GraphPaperFrameworkUnitTests.m */; };
 		5D9EB68114A640EB007ED66A /* GraphPaperFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D07D380143A7107004BC2A1 /* GraphPaperFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5D9EB68714A64122007ED66A /* GraphPaperCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D07D3A4143A7123004BC2A1 /* GraphPaperCell.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		5D9EB68814A64125007ED66A /* GraphPaperView.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D07D3A6143A7123004BC2A1 /* GraphPaperView.h */; settings = {ATTRIBUTES = (Private, ); }; };
@@ -107,12 +103,6 @@
 		5D9EB66014A6022A007ED66A /* CellSourceConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CellSourceConstants.m; sourceTree = "<group>"; };
 		5D9EB66314A60796007ED66A /* ClickSourceConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClickSourceConstants.h; sourceTree = "<group>"; };
 		5D9EB66414A60796007ED66A /* ClickSourceConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClickSourceConstants.m; sourceTree = "<group>"; };
-		5D9EB67114A63E6C007ED66A /* GraphPaperFrameworkUnitTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GraphPaperFrameworkUnitTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5D9EB67614A63E6C007ED66A /* GraphPaperFrameworkUnitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GraphPaperFrameworkUnitTests-Info.plist"; sourceTree = "<group>"; };
-		5D9EB67814A63E6C007ED66A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		5D9EB67A14A63E6C007ED66A /* GraphPaperFrameworkUnitTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GraphPaperFrameworkUnitTests.h; sourceTree = "<group>"; };
-		5D9EB67B14A63E6C007ED66A /* GraphPaperFrameworkUnitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GraphPaperFrameworkUnitTests.m; sourceTree = "<group>"; };
-		5D9EB67D14A63E6C007ED66A /* GraphPaperFrameworkUnitTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GraphPaperFrameworkUnitTests-Prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,15 +124,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5D9EB66D14A63E6C007ED66A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5D9EB67214A63E6C007ED66A /* SenTestingKit.framework in Frameworks */,
-				5D9EB67314A63E6C007ED66A /* Cocoa.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -151,7 +132,6 @@
 			children = (
 				5D07D379143A7107004BC2A1 /* GraphPaperFramework */,
 				5D36F971149424040060D9CB /* GraphPaperFrameworkStake */,
-				5D9EB67414A63E6C007ED66A /* GraphPaperFrameworkUnitTests */,
 				5D07D372143A7107004BC2A1 /* Frameworks */,
 				5D07D371143A7107004BC2A1 /* Products */,
 			);
@@ -162,7 +142,6 @@
 			children = (
 				5D07D370143A7107004BC2A1 /* GraphPaperFramework.framework */,
 				5D36F96E149424040060D9CB /* GraphPaperFrameworkStake.app */,
-				5D9EB67114A63E6C007ED66A /* GraphPaperFrameworkUnitTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -242,26 +221,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		5D9EB67414A63E6C007ED66A /* GraphPaperFrameworkUnitTests */ = {
-			isa = PBXGroup;
-			children = (
-				5D9EB67A14A63E6C007ED66A /* GraphPaperFrameworkUnitTests.h */,
-				5D9EB67B14A63E6C007ED66A /* GraphPaperFrameworkUnitTests.m */,
-				5D9EB67514A63E6C007ED66A /* Supporting Files */,
-			);
-			path = GraphPaperFrameworkUnitTests;
-			sourceTree = "<group>";
-		};
-		5D9EB67514A63E6C007ED66A /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				5D9EB67614A63E6C007ED66A /* GraphPaperFrameworkUnitTests-Info.plist */,
-				5D9EB67714A63E6C007ED66A /* InfoPlist.strings */,
-				5D9EB67D14A63E6C007ED66A /* GraphPaperFrameworkUnitTests-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -321,24 +280,6 @@
 			productReference = 5D36F96E149424040060D9CB /* GraphPaperFrameworkStake.app */;
 			productType = "com.apple.product-type.application";
 		};
-		5D9EB67014A63E6C007ED66A /* GraphPaperFrameworkUnitTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 5D9EB67E14A63E6C007ED66A /* Build configuration list for PBXNativeTarget "GraphPaperFrameworkUnitTests" */;
-			buildPhases = (
-				5D9EB66C14A63E6C007ED66A /* Sources */,
-				5D9EB66D14A63E6C007ED66A /* Frameworks */,
-				5D9EB66E14A63E6C007ED66A /* Resources */,
-				5D9EB66F14A63E6C007ED66A /* ShellScript */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = GraphPaperFrameworkUnitTests;
-			productName = GraphPaperFrameworkUnitTests;
-			productReference = 5D9EB67114A63E6C007ED66A /* GraphPaperFrameworkUnitTests.octest */;
-			productType = "com.apple.product-type.bundle";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -362,7 +303,6 @@
 			targets = (
 				5D07D36F143A7107004BC2A1 /* GraphPaperFramework */,
 				5D36F96D149424040060D9CB /* GraphPaperFrameworkStake */,
-				5D9EB67014A63E6C007ED66A /* GraphPaperFrameworkUnitTests */,
 			);
 		};
 /* End PBXProject section */
@@ -386,31 +326,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5D9EB66E14A63E6C007ED66A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5D9EB67914A63E6C007ED66A /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		5D9EB66F14A63E6C007ED66A /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5D07D36B143A7107004BC2A1 /* Sources */ = {
@@ -431,14 +347,6 @@
 			files = (
 				5D36F978149424040060D9CB /* main.m in Sources */,
 				5D36F97F149424040060D9CB /* AppDelegate.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5D9EB66C14A63E6C007ED66A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5D9EB67C14A63E6C007ED66A /* GraphPaperFrameworkUnitTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -483,14 +391,6 @@
 				5D36F981149424040060D9CB /* en */,
 			);
 			name = MainMenu.xib;
-			sourceTree = "<group>";
-		};
-		5D9EB67714A63E6C007ED66A /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5D9EB67814A63E6C007ED66A /* en */,
-			);
-			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -603,30 +503,6 @@
 			};
 			name = Release;
 		};
-		5D9EB67F14A63E6C007ED66A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "GraphPaperFrameworkUnitTests/GraphPaperFrameworkUnitTests-Prefix.pch";
-				INFOPLIST_FILE = "GraphPaperFrameworkUnitTests/GraphPaperFrameworkUnitTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = octest;
-			};
-			name = Debug;
-		};
-		5D9EB68014A63E6C007ED66A /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "GraphPaperFrameworkUnitTests/GraphPaperFrameworkUnitTests-Prefix.pch";
-				INFOPLIST_FILE = "GraphPaperFrameworkUnitTests/GraphPaperFrameworkUnitTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = octest;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -656,14 +532,6 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
-		};
-		5D9EB67E14A63E6C007ED66A /* Build configuration list for PBXNativeTarget "GraphPaperFrameworkUnitTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5D9EB67F14A63E6C007ED66A /* Debug */,
-				5D9EB68014A63E6C007ED66A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

@@ -31,8 +31,6 @@ NSMutableSet *sinks;
     
     c = [[GraphPaperCell alloc] initWithX:5 andY:10];
     [self addCell:c];
-
-//    [view setNeedsDisplay:TRUE];
 }
 
 -(GraphPaperCellController *)init
@@ -109,7 +107,6 @@ NSMutableSet *sinks;
     } else {
         [self addCell:cell withX:cell.x andY:cell.y];
     }
-//    [self.view setNeedsDisplay:TRUE];
 }
 
 @end
