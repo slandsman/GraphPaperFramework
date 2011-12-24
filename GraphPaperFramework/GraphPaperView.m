@@ -11,12 +11,13 @@
 #import "CellSourceConstants.h"
 #import "ClickSourceConstants.h"
 
-@implementation GraphPaperView
+@implementation GraphPaperView {
+    NSPoint last_touch;
+}
 
 @synthesize source;
 
 static int GRID_SCALE = 10;
-NSPoint last_touch;
 
 - (id)initWithFrame:(NSRect)frame
 {
