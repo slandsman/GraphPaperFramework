@@ -9,12 +9,6 @@
 /* Begin PBXBuildFile section */
 		5D07D374143A7107004BC2A1 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D07D373143A7107004BC2A1 /* Cocoa.framework */; };
 		5D07D37E143A7107004BC2A1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5D07D37C143A7107004BC2A1 /* InfoPlist.strings */; };
-		5D07D382143A7107004BC2A1 /* GraphPaperFramework.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D07D381143A7107004BC2A1 /* GraphPaperFramework.m */; };
-		5D07D38A143A7107004BC2A1 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D07D389143A7107004BC2A1 /* SenTestingKit.framework */; };
-		5D07D38B143A7107004BC2A1 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D07D373143A7107004BC2A1 /* Cocoa.framework */; };
-		5D07D38E143A7107004BC2A1 /* GraphPaperFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D07D370143A7107004BC2A1 /* GraphPaperFramework.framework */; };
-		5D07D394143A7107004BC2A1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5D07D392143A7107004BC2A1 /* InfoPlist.strings */; };
-		5D07D397143A7107004BC2A1 /* GraphPaperFrameworkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D07D396143A7107004BC2A1 /* GraphPaperFrameworkTests.m */; };
 		5D07D3AE143A7123004BC2A1 /* GraphPaperCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D07D3A4143A7123004BC2A1 /* GraphPaperCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5D07D3AF143A7123004BC2A1 /* GraphPaperCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D07D3A5143A7123004BC2A1 /* GraphPaperCell.m */; };
 		5D07D3B0143A7123004BC2A1 /* GraphPaperView.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D07D3A6143A7123004BC2A1 /* GraphPaperView.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -38,16 +32,13 @@
 		5D9EB66214A6022A007ED66A /* CellSourceConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D9EB66014A6022A007ED66A /* CellSourceConstants.m */; };
 		5D9EB66514A60796007ED66A /* ClickSourceConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D9EB66314A60796007ED66A /* ClickSourceConstants.h */; };
 		5D9EB66614A60796007ED66A /* ClickSourceConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D9EB66414A60796007ED66A /* ClickSourceConstants.m */; };
+		5D9EB67214A63E6C007ED66A /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D07D389143A7107004BC2A1 /* SenTestingKit.framework */; };
+		5D9EB67314A63E6C007ED66A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D07D373143A7107004BC2A1 /* Cocoa.framework */; };
+		5D9EB67914A63E6C007ED66A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5D9EB67714A63E6C007ED66A /* InfoPlist.strings */; };
+		5D9EB67C14A63E6C007ED66A /* GraphPaperFrameworkUnitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D9EB67B14A63E6C007ED66A /* GraphPaperFrameworkUnitTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		5D07D38C143A7107004BC2A1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 5D07D366143A7107004BC2A1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5D07D36F143A7107004BC2A1;
-			remoteInfo = GraphPaperFramework;
-		};
 		5D36F99C14942F350060D9CB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 5D07D366143A7107004BC2A1 /* Project object */;
@@ -92,13 +83,7 @@
 		5D07D37D143A7107004BC2A1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5D07D37F143A7107004BC2A1 /* GraphPaperFramework-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GraphPaperFramework-Prefix.pch"; sourceTree = "<group>"; };
 		5D07D380143A7107004BC2A1 /* GraphPaperFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GraphPaperFramework.h; sourceTree = "<group>"; };
-		5D07D381143A7107004BC2A1 /* GraphPaperFramework.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GraphPaperFramework.m; sourceTree = "<group>"; };
-		5D07D388143A7107004BC2A1 /* GraphPaperFrameworkTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GraphPaperFrameworkTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D07D389143A7107004BC2A1 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		5D07D391143A7107004BC2A1 /* GraphPaperFrameworkTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GraphPaperFrameworkTests-Info.plist"; sourceTree = "<group>"; };
-		5D07D393143A7107004BC2A1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		5D07D395143A7107004BC2A1 /* GraphPaperFrameworkTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GraphPaperFrameworkTests.h; sourceTree = "<group>"; };
-		5D07D396143A7107004BC2A1 /* GraphPaperFrameworkTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GraphPaperFrameworkTests.m; sourceTree = "<group>"; };
 		5D07D3A4143A7123004BC2A1 /* GraphPaperCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GraphPaperCell.h; sourceTree = "<group>"; };
 		5D07D3A5143A7123004BC2A1 /* GraphPaperCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GraphPaperCell.m; sourceTree = "<group>"; };
 		5D07D3A6143A7123004BC2A1 /* GraphPaperView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GraphPaperView.h; sourceTree = "<group>"; };
@@ -121,6 +106,12 @@
 		5D9EB66014A6022A007ED66A /* CellSourceConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CellSourceConstants.m; sourceTree = "<group>"; };
 		5D9EB66314A60796007ED66A /* ClickSourceConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClickSourceConstants.h; sourceTree = "<group>"; };
 		5D9EB66414A60796007ED66A /* ClickSourceConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClickSourceConstants.m; sourceTree = "<group>"; };
+		5D9EB67114A63E6C007ED66A /* GraphPaperFrameworkUnitTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GraphPaperFrameworkUnitTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D9EB67614A63E6C007ED66A /* GraphPaperFrameworkUnitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GraphPaperFrameworkUnitTests-Info.plist"; sourceTree = "<group>"; };
+		5D9EB67814A63E6C007ED66A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5D9EB67A14A63E6C007ED66A /* GraphPaperFrameworkUnitTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GraphPaperFrameworkUnitTests.h; sourceTree = "<group>"; };
+		5D9EB67B14A63E6C007ED66A /* GraphPaperFrameworkUnitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GraphPaperFrameworkUnitTests.m; sourceTree = "<group>"; };
+		5D9EB67D14A63E6C007ED66A /* GraphPaperFrameworkUnitTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GraphPaperFrameworkUnitTests-Prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,22 +124,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5D07D384143A7107004BC2A1 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5D07D38A143A7107004BC2A1 /* SenTestingKit.framework in Frameworks */,
-				5D07D38B143A7107004BC2A1 /* Cocoa.framework in Frameworks */,
-				5D07D38E143A7107004BC2A1 /* GraphPaperFramework.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		5D36F96B149424040060D9CB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				5D36F99E1494302C0060D9CB /* GraphPaperFramework.framework in Frameworks */,
 				5D36F970149424040060D9CB /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D9EB66D14A63E6C007ED66A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D9EB67214A63E6C007ED66A /* SenTestingKit.framework in Frameworks */,
+				5D9EB67314A63E6C007ED66A /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -159,8 +149,8 @@
 			isa = PBXGroup;
 			children = (
 				5D07D379143A7107004BC2A1 /* GraphPaperFramework */,
-				5D07D38F143A7107004BC2A1 /* GraphPaperFrameworkTests */,
 				5D36F971149424040060D9CB /* GraphPaperFrameworkStake */,
+				5D9EB67414A63E6C007ED66A /* GraphPaperFrameworkUnitTests */,
 				5D07D372143A7107004BC2A1 /* Frameworks */,
 				5D07D371143A7107004BC2A1 /* Products */,
 			);
@@ -170,8 +160,8 @@
 			isa = PBXGroup;
 			children = (
 				5D07D370143A7107004BC2A1 /* GraphPaperFramework.framework */,
-				5D07D388143A7107004BC2A1 /* GraphPaperFrameworkTests.octest */,
 				5D36F96E149424040060D9CB /* GraphPaperFrameworkStake.app */,
+				5D9EB67114A63E6C007ED66A /* GraphPaperFrameworkUnitTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -213,7 +203,6 @@
 				5D07D3A9143A7123004BC2A1 /* GraphPaperCellController.h */,
 				5D07D3AA143A7123004BC2A1 /* GraphPaperCellController.m */,
 				5D07D380143A7107004BC2A1 /* GraphPaperFramework.h */,
-				5D07D381143A7107004BC2A1 /* GraphPaperFramework.m */,
 				5D07D37A143A7107004BC2A1 /* Supporting Files */,
 			);
 			path = GraphPaperFramework;
@@ -225,25 +214,6 @@
 				5D07D37B143A7107004BC2A1 /* GraphPaperFramework-Info.plist */,
 				5D07D37C143A7107004BC2A1 /* InfoPlist.strings */,
 				5D07D37F143A7107004BC2A1 /* GraphPaperFramework-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		5D07D38F143A7107004BC2A1 /* GraphPaperFrameworkTests */ = {
-			isa = PBXGroup;
-			children = (
-				5D07D395143A7107004BC2A1 /* GraphPaperFrameworkTests.h */,
-				5D07D396143A7107004BC2A1 /* GraphPaperFrameworkTests.m */,
-				5D07D390143A7107004BC2A1 /* Supporting Files */,
-			);
-			path = GraphPaperFrameworkTests;
-			sourceTree = "<group>";
-		};
-		5D07D390143A7107004BC2A1 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				5D07D391143A7107004BC2A1 /* GraphPaperFrameworkTests-Info.plist */,
-				5D07D392143A7107004BC2A1 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -267,6 +237,26 @@
 				5D36F977149424040060D9CB /* main.m */,
 				5D36F979149424040060D9CB /* GraphPaperFrameworkStake-Prefix.pch */,
 				5D36F97A149424040060D9CB /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5D9EB67414A63E6C007ED66A /* GraphPaperFrameworkUnitTests */ = {
+			isa = PBXGroup;
+			children = (
+				5D9EB67A14A63E6C007ED66A /* GraphPaperFrameworkUnitTests.h */,
+				5D9EB67B14A63E6C007ED66A /* GraphPaperFrameworkUnitTests.m */,
+				5D9EB67514A63E6C007ED66A /* Supporting Files */,
+			);
+			path = GraphPaperFrameworkUnitTests;
+			sourceTree = "<group>";
+		};
+		5D9EB67514A63E6C007ED66A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5D9EB67614A63E6C007ED66A /* GraphPaperFrameworkUnitTests-Info.plist */,
+				5D9EB67714A63E6C007ED66A /* InfoPlist.strings */,
+				5D9EB67D14A63E6C007ED66A /* GraphPaperFrameworkUnitTests-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -310,25 +300,6 @@
 			productReference = 5D07D370143A7107004BC2A1 /* GraphPaperFramework.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		5D07D387143A7107004BC2A1 /* GraphPaperFrameworkTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 5D07D39D143A7107004BC2A1 /* Build configuration list for PBXNativeTarget "GraphPaperFrameworkTests" */;
-			buildPhases = (
-				5D07D383143A7107004BC2A1 /* Sources */,
-				5D07D384143A7107004BC2A1 /* Frameworks */,
-				5D07D385143A7107004BC2A1 /* Resources */,
-				5D07D386143A7107004BC2A1 /* ShellScript */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				5D07D38D143A7107004BC2A1 /* PBXTargetDependency */,
-			);
-			name = GraphPaperFrameworkTests;
-			productName = GraphPaperFrameworkTests;
-			productReference = 5D07D388143A7107004BC2A1 /* GraphPaperFrameworkTests.octest */;
-			productType = "com.apple.product-type.bundle";
-		};
 		5D36F96D149424040060D9CB /* GraphPaperFrameworkStake */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5D36F996149424040060D9CB /* Build configuration list for PBXNativeTarget "GraphPaperFrameworkStake" */;
@@ -347,6 +318,24 @@
 			productName = GraphPaperFrameworkStake;
 			productReference = 5D36F96E149424040060D9CB /* GraphPaperFrameworkStake.app */;
 			productType = "com.apple.product-type.application";
+		};
+		5D9EB67014A63E6C007ED66A /* GraphPaperFrameworkUnitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5D9EB67E14A63E6C007ED66A /* Build configuration list for PBXNativeTarget "GraphPaperFrameworkUnitTests" */;
+			buildPhases = (
+				5D9EB66C14A63E6C007ED66A /* Sources */,
+				5D9EB66D14A63E6C007ED66A /* Frameworks */,
+				5D9EB66E14A63E6C007ED66A /* Resources */,
+				5D9EB66F14A63E6C007ED66A /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GraphPaperFrameworkUnitTests;
+			productName = GraphPaperFrameworkUnitTests;
+			productReference = 5D9EB67114A63E6C007ED66A /* GraphPaperFrameworkUnitTests.octest */;
+			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
 
@@ -370,8 +359,8 @@
 			projectRoot = "";
 			targets = (
 				5D07D36F143A7107004BC2A1 /* GraphPaperFramework */,
-				5D07D387143A7107004BC2A1 /* GraphPaperFrameworkTests */,
 				5D36F96D149424040060D9CB /* GraphPaperFrameworkStake */,
+				5D9EB67014A63E6C007ED66A /* GraphPaperFrameworkUnitTests */,
 			);
 		};
 /* End PBXProject section */
@@ -385,14 +374,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5D07D385143A7107004BC2A1 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5D07D394143A7107004BC2A1 /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		5D36F96C149424040060D9CB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -403,10 +384,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5D9EB66E14A63E6C007ED66A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D9EB67914A63E6C007ED66A /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		5D07D386143A7107004BC2A1 /* ShellScript */ = {
+		5D9EB66F14A63E6C007ED66A /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -426,20 +415,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5D07D382143A7107004BC2A1 /* GraphPaperFramework.m in Sources */,
 				5D07D3AF143A7123004BC2A1 /* GraphPaperCell.m in Sources */,
 				5D07D3B1143A7123004BC2A1 /* GraphPaperView.m in Sources */,
 				5D07D3B4143A7123004BC2A1 /* GraphPaperCellController.m in Sources */,
 				5D9EB66214A6022A007ED66A /* CellSourceConstants.m in Sources */,
 				5D9EB66614A60796007ED66A /* ClickSourceConstants.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5D07D383143A7107004BC2A1 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5D07D397143A7107004BC2A1 /* GraphPaperFrameworkTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -452,14 +432,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5D9EB66C14A63E6C007ED66A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D9EB67C14A63E6C007ED66A /* GraphPaperFrameworkUnitTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		5D07D38D143A7107004BC2A1 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 5D07D36F143A7107004BC2A1 /* GraphPaperFramework */;
-			targetProxy = 5D07D38C143A7107004BC2A1 /* PBXContainerItemProxy */;
-		};
 		5D36F99D14942F350060D9CB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 5D07D36F143A7107004BC2A1 /* GraphPaperFramework */;
@@ -472,14 +455,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				5D07D37D143A7107004BC2A1 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		5D07D392143A7107004BC2A1 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5D07D393143A7107004BC2A1 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -506,6 +481,14 @@
 				5D36F981149424040060D9CB /* en */,
 			);
 			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		5D9EB67714A63E6C007ED66A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5D9EB67814A63E6C007ED66A /* en */,
+			);
+			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -596,30 +579,6 @@
 			};
 			name = Release;
 		};
-		5D07D39E143A7107004BC2A1 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "GraphPaperFramework/GraphPaperFramework-Prefix.pch";
-				INFOPLIST_FILE = "GraphPaperFrameworkTests/GraphPaperFrameworkTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = octest;
-			};
-			name = Debug;
-		};
-		5D07D39F143A7107004BC2A1 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "GraphPaperFramework/GraphPaperFramework-Prefix.pch";
-				INFOPLIST_FILE = "GraphPaperFrameworkTests/GraphPaperFrameworkTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = octest;
-			};
-			name = Release;
-		};
 		5D36F997149424040060D9CB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -639,6 +598,30 @@
 				INFOPLIST_FILE = "GraphPaperFrameworkStake/GraphPaperFrameworkStake-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		5D9EB67F14A63E6C007ED66A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GraphPaperFrameworkUnitTests/GraphPaperFrameworkUnitTests-Prefix.pch";
+				INFOPLIST_FILE = "GraphPaperFrameworkUnitTests/GraphPaperFrameworkUnitTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		5D9EB68014A63E6C007ED66A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GraphPaperFrameworkUnitTests/GraphPaperFrameworkUnitTests-Prefix.pch";
+				INFOPLIST_FILE = "GraphPaperFrameworkUnitTests/GraphPaperFrameworkUnitTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
 			};
 			name = Release;
 		};
@@ -663,15 +646,6 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5D07D39D143A7107004BC2A1 /* Build configuration list for PBXNativeTarget "GraphPaperFrameworkTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5D07D39E143A7107004BC2A1 /* Debug */,
-				5D07D39F143A7107004BC2A1 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		5D36F996149424040060D9CB /* Build configuration list for PBXNativeTarget "GraphPaperFrameworkStake" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -680,6 +654,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		5D9EB67E14A63E6C007ED66A /* Build configuration list for PBXNativeTarget "GraphPaperFrameworkUnitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D9EB67F14A63E6C007ED66A /* Debug */,
+				5D9EB68014A63E6C007ED66A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
