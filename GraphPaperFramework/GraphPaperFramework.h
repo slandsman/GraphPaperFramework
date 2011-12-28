@@ -1,8 +1,7 @@
 //
 //  GraphPaperFramework.h
-//  GraphPaperFramework
 //
-//  Created by Seth Landsman on 10/3/11.
+//  Created by Seth Landsman <mailto:seth@homeforderangedscientists.net>
 //  Copyright (c) 2011 HomeForDerangedScientists. All rights reserved.
 //
 
@@ -11,6 +10,7 @@
 #import "GraphPaperView.h"
 #import "CellSource.h"
 #import "CellSourceConstants.h"
+#import "ClickSourceConstants.h"
 #import "GraphPaperCellController.h"
 
 

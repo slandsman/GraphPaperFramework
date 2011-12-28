@@ -1,10 +1,10 @@
 //
 //  ClickSource.h
-//  GraphPaperFramework
 //
-//  Created by Seth Landsman on 12/23/11.
+//  Created by Seth Landsman <mailto:seth@homeforderangedscientists.net>
 //  Copyright (c) 2011 HomeForDerangedScientists. All rights reserved.
 //
+
 
 #import <Foundation/Foundation.h>
 

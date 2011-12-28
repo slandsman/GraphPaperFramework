@@ -1,8 +1,7 @@
 //
 //  GraphPaperView.h
-//  GraphPaperViewStake
 //
-//  Created by Seth Landsman on 8/20/11.
+//  Created by Seth Landsman <mailto:seth@homeforderangedscientists.net>
 //  Copyright (c) 2011 HomeForDerangedScientists. All rights reserved.
 //
 

@@ -1,10 +1,10 @@
 //
 //  GraphPaperCellController.m
-//  GraphPaperViewStake
 //
-//  Created by Seth Landsman on 9/24/11.
+//  Created by Seth Landsman <mailto:seth@homeforderangedscientists.net>
 //  Copyright (c) 2011 HomeForDerangedScientists. All rights reserved.
 //
+
 
 #import "GraphPaperCellController.h"
 #import "GraphPaperCell.h"
