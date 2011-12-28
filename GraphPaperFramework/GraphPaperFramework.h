@@ -11,6 +11,8 @@
 #import "CellSource.h"
 #import "CellSourceConstants.h"
 #import "ClickSourceConstants.h"
+#import "ClickSource.h"
+#import "CellSink.h"
 #import "GraphPaperCellController.h"
 
 

@@ -23,6 +23,7 @@
 		5D36F99E1494302C0060D9CB /* GraphPaperFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D07D370143A7107004BC2A1 /* GraphPaperFramework.framework */; };
 		5D36F9A01494304B0060D9CB /* GraphPaperFramework.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5D07D370143A7107004BC2A1 /* GraphPaperFramework.framework */; };
 		5D36F9A1149430770060D9CB /* TwoKeyDictionaryFramework.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5D07D3BB143A7141004BC2A1 /* TwoKeyDictionaryFramework.framework */; };
+		5D70C25114ABA89500FEFB81 /* CellSink.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D70C25014ABA89500FEFB81 /* CellSink.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5D9EB66214A6022A007ED66A /* CellSourceConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D9EB66014A6022A007ED66A /* CellSourceConstants.m */; };
 		5D9EB66614A60796007ED66A /* ClickSourceConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D9EB66414A60796007ED66A /* ClickSourceConstants.m */; };
 		5D9EB68114A640EB007ED66A /* GraphPaperFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D07D380143A7107004BC2A1 /* GraphPaperFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -98,6 +99,7 @@
 		5D36F97D149424040060D9CB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5D36F97E149424040060D9CB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		5D36F981149424040060D9CB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		5D70C25014ABA89500FEFB81 /* CellSink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellSink.h; sourceTree = "<group>"; };
 		5D9EB65414A5454B007ED66A /* ClickSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClickSource.h; sourceTree = "<group>"; };
 		5D9EB65F14A6022A007ED66A /* CellSourceConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellSourceConstants.h; sourceTree = "<group>"; };
 		5D9EB66014A6022A007ED66A /* CellSourceConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CellSourceConstants.m; sourceTree = "<group>"; };
@@ -184,6 +186,7 @@
 				5D07D3AA143A7123004BC2A1 /* GraphPaperCellController.m */,
 				5D07D380143A7107004BC2A1 /* GraphPaperFramework.h */,
 				5D07D37A143A7107004BC2A1 /* Supporting Files */,
+				5D70C25014ABA89500FEFB81 /* CellSink.h */,
 			);
 			path = GraphPaperFramework;
 			sourceTree = "<group>";
@@ -234,6 +237,7 @@
 				5D9EB68D14A64130007ED66A /* GraphPaperCellController.h in Headers */,
 				5D9EB68C14A6412E007ED66A /* CellSourceConstants.h in Headers */,
 				5D9EB68B14A6412B007ED66A /* ClickSourceConstants.h in Headers */,
+				5D70C25114ABA89500FEFB81 /* CellSink.h in Headers */,
 				5D9EB68A14A64129007ED66A /* ClickSource.h in Headers */,
 				5D9EB68914A64127007ED66A /* CellSource.h in Headers */,
 			);

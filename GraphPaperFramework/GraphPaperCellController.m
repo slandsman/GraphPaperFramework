@@ -1,10 +1,17 @@
-//
-//  GraphPaperCellController.m
-//
-//  Created by Seth Landsman <mailto:seth@homeforderangedscientists.net>
-//  Copyright (c) 2011 HomeForDerangedScientists. All rights reserved.
-//
-
+/**
+ GraphPaperCellController.m
+ 
+ The Cell Controller is the authoritative source of cells for the 
+ GraphPaperView.
+ 
+ This class will broadcast a cell update (kGPVCellsDidUpdate) when
+ the set of cells change
+ 
+ If further behavior is expected, this class should be overriden 
+ 
+ @copyright Copyright (c) 2011 HomeForDerangedScientists. All rights reserved.
+ @author Seth Landsman <mailto:seth@homeforderangedscientists.net>
+ */
 
 #import "GraphPaperCellController.h"
 #import "GraphPaperCell.h"
@@ -12,26 +19,17 @@
 #import "ClickSourceConstants.h"
 #import <TwoKeyDictionaryFramework/TwoKeyMutableDictionary.h>
 
-@implementation GraphPaperCellController
+@interface GraphPaperCellController(private)
 
-TwoKeyMutableDictionary *cells;
-NSMutableSet *sinks;
+    -(void)notifySinks;
 
--(void)populate_sample_data 
-{
-    GraphPaperCell *c = [[GraphPaperCell alloc] init];
-    c.x = 0; c.y = 0;
-    [self addCell:c];
-    
-    c = [[GraphPaperCell alloc] initWithX:1 andY:1];
-    [self addCell:c];
-    
-    c = [[GraphPaperCell alloc] initWithX:5 andY:5];
-    [self addCell:c];
-    
-    c = [[GraphPaperCell alloc] initWithX:5 andY:10];
-    [self addCell:c];
+@end
+
+@implementation GraphPaperCellController {
+    TwoKeyMutableDictionary *cells; /** the list of cells contained by the controller */
 }
+
+#pragma mark - Initializers
 
 -(GraphPaperCellController *)init
 {
@@ -41,19 +39,12 @@ NSMutableSet *sinks;
         NSNotificationCenter *notctr = [NSNotificationCenter defaultCenter];
         [notctr addObserver:self selector:@selector(handleClick:) 
                        name:[ClickSourceConstants kGPVClickDidOccur] object:nil];
-        sinks = [[NSMutableSet alloc] init];
         cells = [[TwoKeyMutableDictionary alloc] init];
-        [self populate_sample_data];
     }
     return self;    
 }
 
--(void)notifySinks
-{
-    NSNotification *not = [NSNotification 
-                           notificationWithName:[CellSourceConstants kGPVCellsDidUpdate] object:self];
-    [[NSNotificationCenter defaultCenter] postNotification:not];
-}
+#pragma mark - Cell listing and manipulation
 
 -(NSSet *)cells {
     if (cells != nil) {
@@ -95,6 +86,8 @@ NSMutableSet *sinks;
     }
 }
 
+#pragma mark - Notification management
+
 -(void)handleClick:(NSNotification *)not
 {
     NSLog(@"Controller handling click ...");
@@ -107,6 +100,13 @@ NSMutableSet *sinks;
     } else {
         [self addCell:cell withX:cell.x andY:cell.y];
     }
+}
+
+-(void)notifySinks
+{
+    NSNotification *not = [NSNotification 
+                           notificationWithName:[CellSourceConstants kGPVCellsDidUpdate] object:self];
+    [[NSNotificationCenter defaultCenter] postNotification:not];
 }
 
 @end

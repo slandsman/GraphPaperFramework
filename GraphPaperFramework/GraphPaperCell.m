@@ -1,16 +1,22 @@
-//
-//  GraphPaperCell.m
-//
-//  Created by Seth Landsman <mailto:seth@homeforderangedscientists.net>
-//  Copyright (c) 2011 HomeForDerangedScientists. All rights reserved.
-//
-
+/**
+ GraphPaperCell.m
+ 
+ The representation of a single atomic cell
+ 
+ @copyright Copyright (c) 2011 HomeForDerangedScientists. All rights reserved.
+ @author Seth Landsman <mailto:seth@homeforderangedscientists.net>
+ 
+ */
 #import "GraphPaperCell.h"
 
 @implementation GraphPaperCell 
 
+#pragma mark - Properties
+
 @synthesize x;
 @synthesize y;
+
+#pragma mark - Initializers
 
 -(id)initWithPoint:(NSPoint) point
 {
@@ -33,5 +39,3 @@
 }
 
 @end
-
-

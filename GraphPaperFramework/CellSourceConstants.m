@@ -1,10 +1,11 @@
-//
-//  CellSourceConstants.m
-//
-//  Created by Seth Landsman <mailto:seth@homeforderangedscientists.net>
-//  Copyright (c) 2011 HomeForDerangedScientists. All rights reserved.
-//
-
+/**
+ CellSourceConstants.m
+ 
+ A class that contains cell source constants
+ 
+ @copyright Copyright (c) 2011 HomeForDerangedScientists. All rights reserved.
+ @author Seth Landsman <mailto:seth@homeforderangedscientists.net>
+ */
 
 #import "CellSourceConstants.h"
 
