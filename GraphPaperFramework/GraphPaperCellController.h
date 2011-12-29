@@ -46,7 +46,6 @@
 /**
  Remove a cell from the list of cells contained by the controller
  
- @param cell The GraphPaperCell to remove
  @param x The x coordinate of the cell
  @param y The y coordinate of the cell
  */

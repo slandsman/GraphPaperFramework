@@ -24,6 +24,8 @@
 		5D36F9A01494304B0060D9CB /* GraphPaperFramework.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5D07D370143A7107004BC2A1 /* GraphPaperFramework.framework */; };
 		5D36F9A1149430770060D9CB /* TwoKeyDictionaryFramework.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5D07D3BB143A7141004BC2A1 /* TwoKeyDictionaryFramework.framework */; };
 		5D70C25114ABA89500FEFB81 /* CellSink.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D70C25014ABA89500FEFB81 /* CellSink.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5D70C25514ACDCA400FEFB81 /* Doxyfile in Resources */ = {isa = PBXBuildFile; fileRef = 5D70C25414ACDCA400FEFB81 /* Doxyfile */; };
+		5D70C25714ACDCAC00FEFB81 /* README in Resources */ = {isa = PBXBuildFile; fileRef = 5D70C25614ACDCAC00FEFB81 /* README */; };
 		5D9EB66214A6022A007ED66A /* CellSourceConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D9EB66014A6022A007ED66A /* CellSourceConstants.m */; };
 		5D9EB66614A60796007ED66A /* ClickSourceConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D9EB66414A60796007ED66A /* ClickSourceConstants.m */; };
 		5D9EB68114A640EB007ED66A /* GraphPaperFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D07D380143A7107004BC2A1 /* GraphPaperFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -100,6 +102,8 @@
 		5D36F97E149424040060D9CB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		5D36F981149424040060D9CB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		5D70C25014ABA89500FEFB81 /* CellSink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellSink.h; sourceTree = "<group>"; };
+		5D70C25414ACDCA400FEFB81 /* Doxyfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Doxyfile; sourceTree = "<group>"; };
+		5D70C25614ACDCAC00FEFB81 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 		5D9EB65414A5454B007ED66A /* ClickSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClickSource.h; sourceTree = "<group>"; };
 		5D9EB65F14A6022A007ED66A /* CellSourceConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellSourceConstants.h; sourceTree = "<group>"; };
 		5D9EB66014A6022A007ED66A /* CellSourceConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CellSourceConstants.m; sourceTree = "<group>"; };
@@ -132,6 +136,8 @@
 		5D07D364143A7107004BC2A1 = {
 			isa = PBXGroup;
 			children = (
+				5D70C25614ACDCAC00FEFB81 /* README */,
+				5D70C25414ACDCA400FEFB81 /* Doxyfile */,
 				5D07D379143A7107004BC2A1 /* GraphPaperFramework */,
 				5D36F971149424040060D9CB /* GraphPaperFrameworkStake */,
 				5D07D372143A7107004BC2A1 /* Frameworks */,
@@ -255,6 +261,7 @@
 				5D07D36D143A7107004BC2A1 /* Headers */,
 				5D07D36E143A7107004BC2A1 /* Resources */,
 				5D171D2514409CBA0020BFF8 /* Copy Frameworks */,
+				5D70C25314ACDA8100FEFB81 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -317,6 +324,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				5D07D37E143A7107004BC2A1 /* InfoPlist.strings in Resources */,
+				5D70C25514ACDCA400FEFB81 /* Doxyfile in Resources */,
+				5D70C25714ACDCAC00FEFB81 /* README in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,6 +340,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5D70C25314ACDA8100FEFB81 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#\n# Build the doxygen documentation for the project and load the docset into Xcode \n#\n# Created by Fred McCann on 03/16/2010.\n# Last updated 10/26/2010.\n# http://www.duckrowing.com\n#\n# Based on the build script provided by Apple:\n# http://developer.apple.com/tools/creatingdocsetswithdoxygen.html\n#\n# Set the variable $COMPANY_RDOMAIN_PREFIX equal to the reverse domain name of your comany\n# Example: com.duckrowing\n#\n\nCOMPANY_RDOMAIN_PREFIX=\"net.homeforderangedscientists\"\nDOXYGEN_PATH=\"/usr/local/bin/doxygen\"\nDOCSET_PATH=\"$SOURCE_ROOT/$PRODUCT_NAME.docset\"\n\n#if ! [ -f \\\"$SOURCE_ROOT/Doxyfile\\\" ] \n#then \n#echo doxygen config file does not exist in $SOURCE_ROOT\n#$DOXYGEN_PATH -g \"$SOURCE_ROOT/Doxyfile\"\n#fi\n\n#  Append the proper input/output directories and docset info to the config file.\n#  This works even though values are assigned higher up in the file. Easier than sed.\n\ncp \"$SOURCE_ROOT/Doxyfile\" \"$TEMP_DIR/Doxyfile\"\n\necho \"INPUT = \\\"$SOURCE_ROOT\\\"\" >> \"$TEMP_DIR/Doxyfile\"\necho \"OUTPUT_DIRECTORY = \\\"$DOCSET_PATH\\\"\" >> \"$TEMP_DIR/Doxyfile\"\necho \"RECURSIVE = YES\" >> \"$TEMP_DIR/Doxyfile\"\necho \"EXTRACT_ALL        = YES\" >> \"$TEMP_DIR/Doxyfile\"\necho \"JAVADOC_AUTOBRIEF        = YES\" >> \"$TEMP_DIR/Doxyfile\"\necho \"GENERATE_LATEX        = NO\" >> \"$TEMP_DIR/Doxyfile\"\necho \"GENERATE_DOCSET        = YES\" >> \"$TEMP_DIR/Doxyfile\"\necho \"DOCSET_FEEDNAME = $PRODUCT_NAME Documentation\" >> \"$TEMP_DIR/Doxyfile\"\necho \"DOCSET_BUNDLE_ID       = $COMPANY_RDOMAIN_PREFIX.$PRODUCT_NAME\" >> \"$TEMP_DIR/Doxyfile\"\n\n#  Run doxygen on the updated config file.\n#  Note: doxygen creates a Makefile that does most of the heavy lifting.\n\n$DOXYGEN_PATH \"$TEMP_DIR/Doxyfile\"\n\n#  make will invoke docsetutil. Take a look at the Makefile to see how this is done.\n\nmake -C \"$DOCSET_PATH/html\" install\n\n#  Construct a temporary applescript file to tell Xcode to load a docset.\n\nrm -f \"$TEMP_DIR/loadDocSet.scpt\"\n\necho \"tell application \\\"Xcode\\\"\" >> \"$TEMP_DIR/loadDocSet.scpt\"\necho \"load documentation set with path \\\"/Users/$USER/Library/Developer/Shared/Documentation/DocSets/$COMPANY_RDOMAIN_PREFIX.$PRODUCT_NAME.docset\\\"\" >> \"$TEMP_DIR/loadDocSet.scpt\"\necho \"end tell\" >> \"$TEMP_DIR/loadDocSet.scpt\"\n\n#  Run the load-docset applescript command.\nosascript \"$TEMP_DIR/loadDocSet.scpt\"\n\nexit 0\n\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5D07D36B143A7107004BC2A1 /* Sources */ = {
@@ -450,6 +475,7 @@
 		5D07D39B143A7107004BC2A1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DOXYGEN_PATH = /usr/local/bin/doxygen;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -469,6 +495,7 @@
 		5D07D39C143A7107004BC2A1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DOXYGEN_PATH = /usr/local/bin/doxygen;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				FRAMEWORK_SEARCH_PATHS = (
