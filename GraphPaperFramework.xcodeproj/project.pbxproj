@@ -26,6 +26,7 @@
 		5D70C25114ABA89500FEFB81 /* CellSink.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D70C25014ABA89500FEFB81 /* CellSink.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5D70C25514ACDCA400FEFB81 /* Doxyfile in Resources */ = {isa = PBXBuildFile; fileRef = 5D70C25414ACDCA400FEFB81 /* Doxyfile */; };
 		5D70C25714ACDCAC00FEFB81 /* README in Resources */ = {isa = PBXBuildFile; fileRef = 5D70C25614ACDCAC00FEFB81 /* README */; };
+		5D70C25F14ACE40E00FEFB81 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 5D70C25E14ACE40E00FEFB81 /* LICENSE */; };
 		5D9EB66214A6022A007ED66A /* CellSourceConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D9EB66014A6022A007ED66A /* CellSourceConstants.m */; };
 		5D9EB66614A60796007ED66A /* ClickSourceConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D9EB66414A60796007ED66A /* ClickSourceConstants.m */; };
 		5D9EB68114A640EB007ED66A /* GraphPaperFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D07D380143A7107004BC2A1 /* GraphPaperFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -104,6 +105,7 @@
 		5D70C25014ABA89500FEFB81 /* CellSink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellSink.h; sourceTree = "<group>"; };
 		5D70C25414ACDCA400FEFB81 /* Doxyfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Doxyfile; sourceTree = "<group>"; };
 		5D70C25614ACDCAC00FEFB81 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		5D70C25E14ACE40E00FEFB81 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		5D9EB65414A5454B007ED66A /* ClickSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClickSource.h; sourceTree = "<group>"; };
 		5D9EB65F14A6022A007ED66A /* CellSourceConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellSourceConstants.h; sourceTree = "<group>"; };
 		5D9EB66014A6022A007ED66A /* CellSourceConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CellSourceConstants.m; sourceTree = "<group>"; };
@@ -136,6 +138,7 @@
 		5D07D364143A7107004BC2A1 = {
 			isa = PBXGroup;
 			children = (
+				5D70C25E14ACE40E00FEFB81 /* LICENSE */,
 				5D70C25614ACDCAC00FEFB81 /* README */,
 				5D70C25414ACDCA400FEFB81 /* Doxyfile */,
 				5D07D379143A7107004BC2A1 /* GraphPaperFramework */,
@@ -326,6 +329,7 @@
 				5D07D37E143A7107004BC2A1 /* InfoPlist.strings in Resources */,
 				5D70C25514ACDCA400FEFB81 /* Doxyfile in Resources */,
 				5D70C25714ACDCAC00FEFB81 /* README in Resources */,
+				5D70C25F14ACE40E00FEFB81 /* LICENSE in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
